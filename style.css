@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Noto+Sans:wght@100&family=Poppins&family=Rubik:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', Arial;
+    color: #FFF;
+    font-size: 16px;
+    background: linear-gradient(to right, #5527F5, #131FA8)
+}
+
+/* ///////// HEADER /////////// */
+
+header {
+    background: #050E5D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+}
+
+ul.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+ul.menu li {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+ul.menu li:hover {
+    color: #0086FF;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.botao a, article a {
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: #FFF;
+    font-weight: bold;
+    background-color: #0086FF;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+.botao a:hover, article a:hover {
+    background-color: #FFF;
+    color: #0086FF;
+    transition: all 0.5s;
+}
+
+.menu-responsivo {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu, .botao, nav {
+        display: none;
+    }
+
+    .menu-responsivo {
+        display: flex;
+    }
+}
+
+/* /////// HOME ///////// */
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#home aside, #home article {
+    width: 50%;
+}
+
+
+
