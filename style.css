@@ -23,6 +23,10 @@ header {
     padding: 20px 35px;
 }
 
+#logo img {
+    width: 200px;
+}
+
 ul.menu {
     display: flex;
     list-style: none;
@@ -72,6 +76,10 @@ ul.menu li:hover {
     .menu-responsivo {
         display: flex;
     }
+
+    #logo img {
+        width: 150px;
+    }
 }
 
 /* /////// HOME ///////// */
@@ -98,6 +106,10 @@ ul.menu li:hover {
     padding-left: 90px;
 }
 
+#home aside img {
+    width: 300px;
+}
+
 article a {
     font-size: 1.3rem;
     padding: 20px 25px;
@@ -108,6 +120,7 @@ article a {
         flex-direction: column;
         gap: 70px;
         justify-content: inherit;
+        margin-bottom: 40px;
     }
 
     #home h1 {
@@ -123,6 +136,10 @@ article a {
     #home article {
         flex-direction: column;
         padding: 70px 35px 35px 35px;
+    }
+
+    #home aside img {
+        width: 240px;
     }
 
     article a {
@@ -172,15 +189,15 @@ article a {
     }
 
     .texto article {
-        width: 65%;
+        width: 70%;
     }
 
     .texto aside {
-        width: 35%;
+        width: 30%;
     }
 
     .img {
-        width: 150px;
+        width: 100px;
     }
 
 
@@ -208,7 +225,7 @@ article a {
 
 @media screen and (max-width: 768px) {
     .conteudo-quem-somos article h1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -298,30 +315,36 @@ article a {
 @media screen and (max-width: 768px) {
 
     .conteudo-contato {
-        padding: 20px 60px;
+        padding: 20px 40px;
 
     }
+
+    #contato
 
 
     .conteudo-input input {
         width: 100%;
-        padding: 10px;
-        font-size: 1.2rem;
+        padding: 8px;
+        font-size: 1.1rem;
         border: none;
         border-radius: 8px;
         outline: none;
     }
 
+    .textbox textarea {
+        height: 100px;
+    }
+
     .btn {
-        padding: 20px 55px;
+        padding: 20px 38px;
     }
 
     .btn button {
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: white;
         border-radius: 8px;
-        padding: 20px 80px;
+        padding: 15px 70px;
         background-color: #0086FF;
     }
     
@@ -349,7 +372,13 @@ footer h1 {
 }
 
 @media screen and (max-width: 768px) {
+
+    footer {
+        padding: 20px;
+    }
     footer h1 {
+        text-align: center;
+        width: 100%;
         font-size: 0.8rem;
     }
 }
