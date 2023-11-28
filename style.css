@@ -13,6 +13,10 @@ body {
     background: linear-gradient(to right, #5527F5, #131FA8)
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ///////// HEADER /////////// */
 
 header {
@@ -88,6 +92,7 @@ ul.menu li:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 80px 40px;
 }
 
 #home h1 {
@@ -121,6 +126,7 @@ article a {
         gap: 70px;
         justify-content: inherit;
         margin-bottom: 40px;
+        padding: 0;
     }
 
     #home h1 {
