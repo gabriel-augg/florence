@@ -38,12 +38,14 @@ ul.menu {
     gap: 40px;
 }
 
-ul.menu li {
+ul.menu li a {
     font-weight: bold;
     font-size: 1.1rem;
+    color: #FFF;
+    text-decoration: none;
 }
 
-ul.menu li:hover {
+ul.menu li a:hover {
     color: #0086FF;
     cursor: pointer;
     transition: all 0.5s;
