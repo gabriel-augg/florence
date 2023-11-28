@@ -80,7 +80,6 @@ ul.menu li:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80vh;
 }
 
 #home h1 {
@@ -111,6 +110,10 @@ article a {
         justify-content: inherit;
     }
 
+    #home h1 {
+        font-size: 1.3rem;
+    }
+
     #home article, #home aside {
         width: 100%;
         display: flex;
@@ -120,6 +123,11 @@ article a {
     #home article {
         flex-direction: column;
         padding: 70px 35px 35px 35px;
+    }
+
+    article a {
+        font-size: 1.3rem;
+        padding: 14px 19px;
     }
 
 }
@@ -297,15 +305,15 @@ article a {
 
     .conteudo-input input {
         width: 100%;
-        padding: 12px;
-        font-size: 1.4rem;
+        padding: 10px;
+        font-size: 1.2rem;
         border: none;
         border-radius: 8px;
         outline: none;
     }
 
     .btn {
-        padding: 20px 60px;
+        padding: 20px 55px;
     }
 
     .btn button {
@@ -340,5 +348,8 @@ footer h1 {
     list-style: none;
 }
 
-
-
+@media screen and (max-width: 768px) {
+    footer h1 {
+        font-size: 0.8rem;
+    }
+}
