@@ -41,7 +41,7 @@ ul.menu li:hover {
     transition: all 0.5s;
 }
 
-.botao a, article a {
+.botao a, article a{
     border-radius: 8px;
     text-decoration: none;
     padding: 12px 20px;
@@ -54,7 +54,7 @@ ul.menu li:hover {
     cursor: pointer;
 }
 
-.botao a:hover, article a:hover {
+.botao a:hover, article a:hover{
     background-color: #FFF;
     color: #0086FF;
     transition: all 0.5s;
@@ -78,13 +78,266 @@ ul.menu li:hover {
 
 #home {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 80vh;
 }
 
-#home aside, #home article {
+#home h1 {
+    font-size: 1.5rem;
+}
+
+#home article, #home aside {
     width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#home article {
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 90px;
+}
+
+article a {
+    font-size: 1.3rem;
+    padding: 20px 25px;
+}
+
+@media screen and (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        gap: 70px;
+        justify-content: inherit;
+    }
+
+    #home article, #home aside {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #home article {
+        flex-direction: column;
+        padding: 70px 35px 35px 35px;
+    }
+
+}
+
+/* ///////// MEDICINA E IA ////////// */
+
+#medicinaEia {
+    background-color: #5527F5;
+    padding-bottom: 50px;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 40px;
+}
+
+.texto {
+    display: flex;
+}
+
+.texto aside, .texto article {
+    width: 50%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.texto h1 {
+    font-size: 1rem;
+    padding: 60px;
+}
+
+.img {
+    width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+    .texto h1 {
+        font-size: 1rem;
+        padding: 40px;
+    }
+
+    .texto article {
+        width: 65%;
+    }
+
+    .texto aside {
+        width: 35%;
+    }
+
+    .img {
+        width: 150px;
+    }
+
+
+}
+
+/* /////// QUEM SOMOS /////// */
+
+#quem-somos {
+    padding: 40px;
+}
+
+.conteudo-quem-somos {
+    display: flex;
+    gap: 30px;
+}
+
+#quem-somos aside, #quem-somos article {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .conteudo-quem-somos article h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    #quem-somos article {
+        width: 100%;
+    }
+
+    #quem-somos aside {
+        display: none;
+    }
+}
+
+/* ////// CONTATO ///////// */
+
+#contato {
+    background: #5527F5;
+}
+
+.conteudo-contato {
+    padding: 10px 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.conteudo-input {
+    flex: 1 0 20rem;
+}
+
+.conteudo-input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.textbox {
+    flex: 2 0 20rem;
+}
+
+.textbox textarea {
+    width: 100%;
+    height: 120px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 30px 150px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn button {
+    border: none;
+    outline: none;
+    font-weight: bolder;
+    font-size: 1rem;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 80px;
+    background-color: #0086FF;
+}
+
+.btn button:hover {
+    color: #0086FF ;
+    background: white;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) {
+    .conteudo-input {
+        flex: 1 0 50rem;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .conteudo-contato {
+        padding: 20px 60px;
+
+    }
+
+
+    .conteudo-input input {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.4rem;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+    }
+
+    .btn {
+        padding: 20px 60px;
+    }
+
+    .btn button {
+        width: 100%;
+        font-size: 1.5rem;
+        color: white;
+        border-radius: 8px;
+        padding: 20px 80px;
+        background-color: #0086FF;
+    }
+    
+}
+
+/* ////// FOOTER /////// */
+
+footer {
+    background: #050E5D;
+    padding: 40px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer h1 {
+    font-size: 1rem;
+}
+
+.redes-sociais ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
 }
 
 
